@@ -7,10 +7,10 @@ import datetime
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000", "methods": ["GET", "POST", "OPTIONS"], "allow_headers": ["Content-Type", "Authorization"]}})
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/course_db"
-app.config["JWT_SECRET_KEY"] = "your_secret_key"
+app.config["MONGO_URI"] = "mongodb+srv://mahitha:Mah!tha18@courserec.rsjw0ll.mongodb.net/"
+app.config["JWT_SECRET_KEY"] = "18282214_mahiskgayusrini"
 
 mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
