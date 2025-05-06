@@ -64,7 +64,3 @@ This project is a full-stack web application designed to provide personalized cu
    ```
 
 4. Make sure MongoDB is running locally or connected via cloud
-
-## 📄 License
-
-This project is for academic and educational use only.
